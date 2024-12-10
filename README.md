@@ -60,11 +60,11 @@ Para resolver:<br/>
 2- Na pasta do projeto, ache a pasta utilitarios, dentro da pasta utilitario, ache o arquivo mysql-connector. (Caminho: src/main/java/utilitario/mysql-connector).<br/>
 3- Após selecionar ele, clique em confirmar e o erro vai estar resolvido.<br/>
 
-#### Versão do Java JDK.
-A versão do projeto está setada como JDK 21.
-Caso esteja utilizando uma versão menor:
-1- Clique na pasta do projeto no Java Netbeans com o botão direito.
-2- Clique em propriedades > build > compile
-3- Em target release, escolha a sua versão do Java JDK.
+#### Versão do Java JDK.<br/>
+A versão do projeto está setada como JDK 21.<br/>
+Caso esteja utilizando uma versão menor:<br/>
+1- Clique na pasta do projeto no Java Netbeans com o botão direito.<br/>
+2- Clique em propriedades > build > compile.<br/>
+3- Em target release, escolha a sua versão do Java JDK.<br/>
 
 
