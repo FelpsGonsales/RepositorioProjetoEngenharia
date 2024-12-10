@@ -36,7 +36,7 @@ Adendo: haverá zip separados do projeto, caso os passos falhem e/ou não consig
 Se aparecer um BD chamado pews, funcionou.<br/>
 Outro método:<br/>
 4.2- Clique em file, add sql file.<br/>
-![n](https://github.com/user-attachments/assets/22522411-dd94-42c2-aaeb-1fff826909da)
+![n](https://github.com/user-attachments/assets/22522411-dd94-42c2-aaeb-1fff826909da)<br/>
 4.2.1- Ache o arquivo que fez download anteriormente e selecione ele.<br/>
 4.2.2- Clique no raio, cheque se o BD pews apareceu.<br/>
 
