@@ -32,7 +32,7 @@ Adendo: haverá zip separados do projeto, caso os passos falhem e/ou não consig
 4.1- Copie e cole o código nessa tela, clique no raio para confirmar.<br/>
 ![image](https://github.com/user-attachments/assets/2bae0100-4dee-4e60-abc0-99d46f9713d5)
 4.1.1- Cheque se funcionou clicando em Schemas, e clicando no icone de rotação destacado.<br/>
-![image](https://github.com/user-attachments/assets/40d2f8e0-4abf-42a6-806c-b00452c2a2a0)
+![image](https://github.com/user-attachments/assets/40d2f8e0-4abf-42a6-806c-b00452c2a2a0)<br/>
 Se aparecer um BD chamado pews, funcionou.<br/>
 Outro método:<br/>
 4.2- Clique em file, add sql file.<br/>
