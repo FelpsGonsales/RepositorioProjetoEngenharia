@@ -47,18 +47,24 @@ Como o projeto foi feito pelo java netbeans, vou dizer como o projeto funcionari
 3- Nas opções do netbeans, File > Open Project , selecione o projeto do arquivo.<br/>
 4- Aguarde carregar, tente rodar.<br/>
 
-#### Erros conhecidos do Java Netbeans:
-Persistência:<br/>
+### Erros conhecidos do Java Netbeans:
+#### Persistência:<br/>
 Há erros de persistência quando adicionado a uma nova máquina.<br/>
 Para resolver ele :<br/>
 todoupdatelater<br/>
 
-Connector do MySql:<br/>
+#### Connector do MySql:<br/>
 O conector sempre está desconfigurado quando se troca de máquina.<br/>
 Para resolver:<br/>
 1- Clique em resolver.<br/>
 2- Na pasta do projeto, ache a pasta utilitarios, dentro da pasta utilitario, ache o arquivo mysql-connector. (Caminho: src/main/java/utilitario/mysql-connector).<br/>
 3- Após selecionar ele, clique em confirmar e o erro vai estar resolvido.<br/>
 
+#### Versão do Java JDK.
+A versão do projeto está setada como JDK 21.
+Caso esteja utilizando uma versão menor:
+1- Clique na pasta do projeto no Java Netbeans com o botão direito.
+2- Clique em propriedades > build > compile
+3- Em target release, escolha a sua versão do Java JDK.
 
 
