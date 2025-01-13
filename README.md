@@ -1,3 +1,43 @@
-Tinha atualizado esse readme, mas por algum motivo excluiu e terei que atualizar novamente.
+# -------------------------------------</br>
+# Propósito do Projeto / Objetivo</br>
+# -------------------------------------</br>
+O projeto tem como objetivo atender as demandas de um programa Pews, que cadastra médicos, técnicos, enfermeiras e pacientes.</br>
+Com tais cadastros, o programa oferece a opção do questionário Pews, e retorna o melhor procedimento a ser tomado.</br>
+</br>
+# -----------------------------------------</br>
+# Configuração do Ambiente do Projeto</br>
+# -----------------------------------------</br>
+</br>
+## Banco de Dados</br>
+O Banco de Dados escolhido no projeto foi o MySql.</br>
+Há tutoriais para instalação do MySql em seu computador.</br>
+Tutorial recomendado: https://www.youtube.com/watch?v=BxdSUGBs0gM  Windows</br> 
+https://www.youtube.com/watch?v=zRfI79BHf3k Linux</br> 
+### Tutorial de uso</br>
+Logo após a instalação, no zip do projeto, há uma pasta chamada Utilitário, só baixar-la e abrir no MySql Workbench, e clicar para executar. </br>
+Também há a mesma pasta no código do projeto.</br>
+</br>
+## Netbeans</br>
+O editor de texto utilizado no programa foi o Apache Netbeans. </br>
+A versão que o projeto utiliza é a 23. </br>
+Videos recomendados: </br>
+https://www.youtube.com/watch?v=vt7_6HwCFOU Windows</br>
+https://www.youtube.com/watch?v=2mc3baeuvJs Linux</br>
+</br>
 
-TOUPDATE
+# -----------------------------------------</br>
+# Erros Conhecidos</br>
+# -----------------------------------------</br>
+
+## Persistência
+Para resolver este problema, a unidade de persistência utilizada no projeto está no mesmo local que o script do banco de dados.</br>
+Clique em resolver problemas e localize o caminho ../SourcePackages/utilitario/mysql-connector-java-8.0.28.jar </br>
+
+## Versão do Netbeans
+Caso de um problema de versão ou não rode por a versão do Netbeans não ser a que o projeto pede:</br>
+1) Clique com o botão direito na pasta do projeto.</br>
+2) Clique em propriedades.</br>
+3) Em Build/Compile, na opção target release, selecione a versão do seu ApacheNetbeans.</br>
+4) Clique em OK.</br>
+
+</br>
