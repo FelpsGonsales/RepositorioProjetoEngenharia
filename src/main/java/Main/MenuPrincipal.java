@@ -81,7 +81,6 @@ public class MenuPrincipal extends JFrame {
 
         setVisible(true);
     }
-
     private void configurarBotao(JButton botao) {
         botao.setBackground(Color.BLACK); // Fundo preto
         botao.setForeground(Color.GREEN); // Texto verde
@@ -89,7 +88,6 @@ public class MenuPrincipal extends JFrame {
         botao.setFocusPainted(false); // Remove o destaque ao redor do botão
         botao.setBorder(BorderFactory.createLineBorder(Color.GREEN, 2)); // Adiciona uma borda verde
     }
-
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MenuPrincipal());
     }
