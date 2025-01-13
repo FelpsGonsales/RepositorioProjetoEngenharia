@@ -1,12 +1,12 @@
-# -------------------------------------</br>
+
 # Propósito do Projeto / Objetivo</br>
-# -------------------------------------</br>
+
 O projeto tem como objetivo atender as demandas de um programa Pews, que cadastra médicos, técnicos, enfermeiras e pacientes.</br>
 Com tais cadastros, o programa oferece a opção do questionário Pews, e retorna o melhor procedimento a ser tomado.</br>
 </br>
-# -----------------------------------------</br>
+
 # Configuração do Ambiente do Projeto</br>
-# -----------------------------------------</br>
+
 </br>
 ## Banco de Dados</br>
 O Banco de Dados escolhido no projeto foi o MySql.</br>
@@ -25,9 +25,7 @@ https://www.youtube.com/watch?v=vt7_6HwCFOU Windows</br>
 https://www.youtube.com/watch?v=2mc3baeuvJs Linux</br>
 </br>
 
-# -----------------------------------------</br>
 # Erros Conhecidos</br>
-# -----------------------------------------</br>
 
 ## Persistência
 Para resolver este problema, a unidade de persistência utilizada no projeto está no mesmo local que o script do banco de dados.</br>
