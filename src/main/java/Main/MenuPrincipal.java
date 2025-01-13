@@ -2,6 +2,7 @@ package Main;
 
 import Gui.GUILoginEnfermeira;
 import Gui.GUILoginMedico;
+import Gui.GUILoginTecnico;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -74,7 +75,7 @@ public class MenuPrincipal extends JFrame {
         btnTecnico.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Você clicou em Técnico(a)!");
+               new GUILoginTecnico();
             }
         });
 

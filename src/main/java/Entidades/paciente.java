@@ -26,50 +26,50 @@ import myUtil.ConversorDeDatas;
  * @author Gonsales
  */
 @Entity
-@Table(name = "enfermeira")
+@Table(name = "paciente")
 @NamedQueries({
-    @NamedQuery(name = "enfermeira.findAll", query = "SELECT n FROM enfermeira n")})
-public class enfermeira implements Serializable {
+    @NamedQuery(name = "paciente.findAll", query = "SELECT m FROM paciente m")})
+public class paciente implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "cip")
-    private Integer cip;
+    @Column(name = "idpaciente")
+    private Integer idpaciente;
     @Basic(optional = false)
-    @Column(name = "nome_enfermeira")
-    private String nome_enfermeira;
+    @Column(name = "nome_paciente")
+    private String nome_paciente;
     @Basic(optional = false)
     @Column(name = "idade")
     private String idade;
 
-    public enfermeira() {
+    public paciente() {
     }
 
-    public enfermeira(Integer cip) {
-        this.cip = cip;
+    public paciente(Integer idpaciente) {
+        this.idpaciente = idpaciente;
     }
 
-    public enfermeira(Integer cip, String nome_enfermeira, String idade) {
-        this.cip = cip;
-        this.nome_enfermeira = nome_enfermeira;
+    public paciente(Integer idpaciente, String nome_paciente, String idade) {
+        this.idpaciente = idpaciente;
+        this.nome_paciente = nome_paciente;
         this.idade = idade;
     }
 
-    public Integer getcip() {
-        return cip;
+    public Integer getidpaciente() {
+        return idpaciente;
     }
 
-    public void setcip(Integer cip) {
-        this.cip = cip;
+    public void setidpaciente(Integer idpaciente) {
+        this.idpaciente = idpaciente;
     }
 
-    public String getnome_enfermeira() {
-        return nome_enfermeira;
+    public String getnome_paciente() {
+        return nome_paciente;
     }
 
-    public void setnome_enfermeira(String nome_enfermeira) {
-        this.nome_enfermeira = nome_enfermeira;
+    public void setnome_paciente(String nome_paciente) {
+        this.nome_paciente = nome_paciente;
     }
 
     public String getidade() {
@@ -83,18 +83,18 @@ public class enfermeira implements Serializable {
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (cip != null ? cip.hashCode() : 0);
+        hash += (idpaciente != null ? idpaciente.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof enfermeira)) {
+        if (!(object instanceof paciente)) {
             return false;
         }
-        enfermeira other = (enfermeira) object;
-        if ((this.cip == null && other.cip != null) || (this.cip != null && !this.cip.equals(other.cip))) {
+        paciente other = (paciente) object;
+        if ((this.idpaciente == null && other.idpaciente != null) || (this.idpaciente != null && !this.idpaciente.equals(other.idpaciente))) {
             return false;
         }
         return true;
@@ -103,7 +103,7 @@ public class enfermeira implements Serializable {
     @Override
     public String toString() {
           ConversorDeDatas cd = new ConversorDeDatas();
-        return cip + ";" + nome_enfermeira + ";" + idade;
+        return idpaciente + ";" + nome_paciente + ";" + idade;
     }
     
 }

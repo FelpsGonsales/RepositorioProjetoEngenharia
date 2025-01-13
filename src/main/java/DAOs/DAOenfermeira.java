@@ -61,7 +61,7 @@ public class DAOenfermeira extends DAOGenerico<enfermeira> {
 
         List<String> ls = new ArrayList<>();
         for (int i = 0; i < lf.size(); i++) {
-            ls.add(lf.get(i).getcpi()+ "-" + lf.get(i).getnome_enfermeira()+ "-" + lf.get(i).getidade());
+            ls.add(lf.get(i).getcip()+ "-" + lf.get(i).getnome_enfermeira()+ "-" + lf.get(i).getidade());
         }
         return ls;
     }
@@ -69,13 +69,13 @@ public class DAOenfermeira extends DAOGenerico<enfermeira> {
         List<enfermeira> lf = listInOrderNome();
         String[] ls = new String[lf.size()];
         for (int i = 0; i < lf.size(); i++) {
-            ls[i]=(lf.get(i).getcpi()+ "-" + lf.get(i).getnome_enfermeira());
+            ls[i]=(lf.get(i).getcip()+ "-" + lf.get(i).getnome_enfermeira());
         }
         return ls;
     }
 
     public boolean enfermeiraExiste(String cip) {
-        String sql = "SELECT COUNT(*) FROM enfermeiras WHERE cip = ?";
+        String sql = "SELECT COUNT(*) FROM enfermeira WHERE cip = ?";
         try (Connection conn = Conectar.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
@@ -95,7 +95,7 @@ public class DAOenfermeira extends DAOGenerico<enfermeira> {
         DAOenfermeira daoenfermeira = new DAOenfermeira();
         List<enfermeira> listaenfermeira = daoenfermeira.list();
         for (enfermeira enfermeira : listaenfermeira) {
-            System.out.println(enfermeira.getcpi()+ "-" + enfermeira.getnome_enfermeira()+ "-" + enfermeira.getidade());
+            System.out.println(enfermeira.getcip()+ "-" + enfermeira.getnome_enfermeira()+ "-" + enfermeira.getidade());
         }
     }
 }

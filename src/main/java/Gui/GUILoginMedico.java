@@ -35,10 +35,11 @@ public class GUILoginMedico extends JFrame {
                 // Verificar no banco de dados
                 if (medicoExiste(crm)) {
                     JOptionPane.showMessageDialog(null, "Bem-vindo!");
-                    // Abrir o menu principal ou tela inicial
+                  new GUIControleMedico();
+                  dispose();
+                    
                 } else {
                     JOptionPane.showMessageDialog(null, "Usuário não encontrado. Redirecionando...");
-                    // Redirecionar para a tela de CRUD
                     new GUIMedico();
                 }
             }
@@ -52,7 +53,7 @@ public class GUILoginMedico extends JFrame {
     // Método para verificar se o médico existe
     public boolean medicoExiste(String crm) {
         // Utilize o método criado anteriormente
-        return new DAOmedico().medicoExiste(crm); // Aqui você deve usar sua lógica
+        return new DAOmedico().medicoExiste(crm); 
     }
 
     public static void main(String[] args) {

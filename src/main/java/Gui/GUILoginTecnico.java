@@ -1,24 +1,26 @@
 package Gui;
 
-import DAOs.DAOenfermeira;
-//import Gui.GUIEnfermeira;
+
+import DAOs.DAOtecnico;
+import Gui.GUIMedico;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
-public class GUILoginEnfermeira extends JFrame {
+public class GUILoginTecnico extends JFrame {
     JTextField tfCRM = new JTextField(15);
     JButton btLogin = new JButton("Login");
     JButton btCancelar = new JButton("Cancelar");
 
-    public GUILoginEnfermeira() {
-        setTitle("Tela de Login- Enfermeira");
+    public GUILoginTecnico() {
+        setTitle("Tela de Login");
         setSize(300, 150);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
 
-        add(new JLabel("CIP:"));
+        add(new JLabel("Identificador:"));
         add(tfCRM);
         add(btLogin);
         add(btCancelar);
@@ -26,20 +28,21 @@ public class GUILoginEnfermeira extends JFrame {
         btLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String cpi = tfCRM.getText().trim();
-                if (cpi.isEmpty()) {
-                    JOptionPane.showMessageDialog(null, "Por favor, insira o seu CIP.");
+                String identificador = tfCRM.getText().trim();
+                if (identificador.isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "Por favor, insira seu Identificador.");
                     return;
                 }
 
                 // Verificar no banco de dados
-                if (enfermeiraExiste(cpi)) {
+                if (tecnicoExiste(identificador)) {
                     JOptionPane.showMessageDialog(null, "Bem-vindo!");
-                    new GUIControleEnfermeira();
+                  new GUIControleTecnico();
+                  dispose();
+                    
                 } else {
                     JOptionPane.showMessageDialog(null, "Usuário não encontrado. Redirecionando...");
-                    // Redirecionar para a tela de CRUD
-                    new GUIEnfermeira();
+                    new GUIMedico();
                 }
             }
         });
@@ -49,11 +52,13 @@ public class GUILoginEnfermeira extends JFrame {
         setVisible(true);
     }
 
-    // Método para verificar se a enfermeira existe
-public boolean enfermeiraExiste(String cip) {
-    return new DAOenfermeira().enfermeiraExiste(cip);
-}
+    // Método para verificar se o médico existe
+    public boolean tecnicoExiste(String identificador) {
+        // Utilize o método criado anteriormente
+        return new DAOtecnico().tecnicoExiste(identificador); 
+    }
+
     public static void main(String[] args) {
-        new GUILoginEnfermeira();
+        new GUILoginMedico();
     }
 }
