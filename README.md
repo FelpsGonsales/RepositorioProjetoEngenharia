@@ -7,17 +7,18 @@ Com tais cadastros, o programa oferece a opção do questionário Pews, e retorn
 
 # Configuração do Ambiente do Projeto</br>
 
-</br>
 ## Banco de Dados</br>
 O Banco de Dados escolhido no projeto foi o MySql.</br>
 Há tutoriais para instalação do MySql em seu computador.</br>
-Tutorial recomendado: https://www.youtube.com/watch?v=BxdSUGBs0gM</br>  Windows</br> 
+Tutorial recomendado:</br>  https://www.youtube.com/watch?v=BxdSUGBs0gM</br>  Windows</br> 
 https://www.youtube.com/watch?v=zRfI79BHf3k</br> Linux</br> 
+
 ### Tutorial de uso</br>
 Logo após a instalação, no zip do projeto, há uma pasta chamada Utilitário, só baixar-la e abrir no MySql Workbench, e clicar para executar. </br>
 Também há a mesma pasta no código do projeto.</br>
-</br>
+
 ## Netbeans</br>
+
 O editor de texto utilizado no programa foi o Apache Netbeans. </br>
 A versão que o projeto utiliza é a 23. </br>
 Videos recomendados: </br>
